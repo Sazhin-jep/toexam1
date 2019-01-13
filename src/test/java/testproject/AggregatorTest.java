@@ -14,7 +14,7 @@ public class AggregatorTest {
     @Test
     public void testResetState() {
         Aggregator agr = new Aggregator();
-        assertThat(agr.getSum());
+        assertThat(agr.reset());
     }
 
     @Test
