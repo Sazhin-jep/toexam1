@@ -12,6 +12,12 @@ public class AggregatorTest {
     }
 
     @Test
+    public void testResetState() {
+        Aggregator agr = new Aggregator();
+        assertThat(agr.getSum());
+    }
+
+    @Test
     public void testSingleAddition() {
         Aggregator agr = new Aggregator();
         double val = 20;
